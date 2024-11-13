@@ -9,6 +9,12 @@ html{
     font-family: "Times New Roman", Times, Baskerville, Georgia;
 }
 
+.logo{
+    width: 110px;
+    height: 100%;
+    display: inline-block;
+}
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -21,43 +27,32 @@ body{
 }
 
 header{
-    
-    margin: 45px 0px;
+    text-align: center;
 }
 
 .headerTwo{
-    margin: 0;
     font-size: 0.5rem;
-    padding: 15px;
 }
 
 h1{
     margin: 0px;
     text-align: center;
-    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 .typOne{
-    font-size: 2.08333rem;
+    margin-top: 15px;
+    width: 180px;
+    height: 100%;
 }
 
 h2{
+    font-size: 1.8rem;
     text-align: center;
-    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 .arrow{
     position: fixed;
     margin: 0px;
-}
-
-.titleDivision{
-    display: inline-block;
-    background-color: red;
-    color: white;
-    border-radius: 8px;
-    margin: auto;
-    padding: 10px;
 }
 
 .recipeTitle{
@@ -106,11 +101,8 @@ ul, ol{
     margin-bottom: 20px;
 }
 
-.paragraphOne, .paragraphTwo{
-    width: 500px;
-}
-
 .box img{
+    display: grid;
     justify-content: center;
     width: 100%;
     height: 210px;
@@ -125,9 +117,9 @@ ul, ol{
     object-fit: cover;
 }
 
-.back-arrow, .back-arrowTwo{
-    margin: 10px;
+.back-arrow{
     width: 2rem;
+    margin: 30px 10px 10px 10px;
 }
 
 .textBoxes{
@@ -135,12 +127,8 @@ ul, ol{
     justify-content: center;
 }
 
-.box-type-two p{
-    max-width: fit-content;
-    margin: 25px 0;
-}
-
 .box p{
+    padding: 8px 0 0 0;
     font-weight: 600;
     text-align: center;
     vertical-align: sub;
@@ -149,28 +137,7 @@ ul, ol{
 .food-type-dividers{
     margin: auto;
     border-radius: 10px;
-    background-color: #d0ccbe;
-}
-
-.small-text{
-    font-size: 0.9674rem;
-}
-
-.even-smaller-text{
-    font-size: 0.949166rem;
-}
-
-.even-smaller-smaller-text{
-    font-size: 0.876874rem;
-}
-
-.bigger-text{
-    text-align: center;
-    font-size: 1.36rem;
-}
-
-.big-text{
-    font-size: 1.3rem;
+    background-color: #d2cfc9;
 }
 
 .menu{
@@ -260,10 +227,6 @@ ul, ol{
         font-size: 0.8rem;
     }
 
-    .back-arrowTwo{
-        width: 2rem;
-    }
-
     ul, ol{
         width: 100%;
         font-size: 0.7rem;
@@ -281,5 +244,9 @@ ul, ol{
 @media (min-width: 700px){
     .boxes-menu {
         width: 50%;
+    }
+    
+    .box p {
+        font-size: 1.35rem;
     }
 }
