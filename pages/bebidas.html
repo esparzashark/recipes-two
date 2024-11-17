@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas Recetas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <a class="arrow" href="../index.html"><img class="back-arrow" src="../img/back-arrow-icon.webp" alt="back_arrow"></a>
+    <header class="headerTwo">
+        <a href="../index.html"><img class="logo" src="../img/recetas_logo.png" alt="logo_recetas"></a>
+    </header>
+    </div>
+    <div class="food-type-dividers">
+        <h2>Bebidas</h2>
+    </div>
+    <div class="boxes beverage">
+        <div class="box five beverage" id="smoothie_pb_">
+            <a href="recipe/smoothie_pb_&_platano.html">
+                <img class="img_icon" src="../img/n5.jpg" alt="Smoothie PB & platano">
+                <p>Smoothie PB & platano</p>
+            </a>
+        </div>
+        <div class="box fortyfour beverage" id="malteada_cinnamon_crunch">
+            <a href="recipe/malteada_cinnamon_crunch.html">
+                <img class="img_icon" src="../img/n44.jpg" alt="Malteada Cinnamon Crunch">
+                <p class="even-smaller-text">Malteada Cinnamon Crunch</p>
+            </a>
+        </div>
+        <div class="box ninetyfour beverage" id="batido_de_proteínas">
+            <a href="recipe/batido_de_proteínas.html">
+                <img class="img_icon" src="../img/n94.jpg" alt="Batido de Proteínas">
+                <p>Batido de Proteínas</p>
+            </a>
+        </div>
+        <div class="box onehundredeight beverage" id="malteada_vainilla">
+            <a href="recipe/malteada_vainilla.html">
+                <img class="img_icon" src="../img/n108.jpg" alt="Malteada Vainilla">
+                <p>Malteada <br> Vainilla</p>
+            </a>
+        </div>
+        <div class="box onehundredtwentyseven beverage" id="batido_cutting">
+            <a href="recipe/batido_cutting.html">
+                <img class="img_icon" src="../img/n127.jpg" alt="Batido Cutting">
+                <p>Batido <br> Cutting</p>
+            </a>
+        </div>
+        <div class="box onehundredtwentyeight beverage" id="batido_bulking">
+            <a href="recipe/batido_bulking.html">
+                <img class="img_icon" src="../img/n128.jpg" alt="Batido Bulking">
+                <p>Batido <br>Bulking</p>
+            </a>
+        </div>
+        <div class="box onehundredseventy-three beverage" id="frosty_wendys">
+            <a href="recipe/frosty_wendys.html">
+                <img class="img_icon" src="../img/n173.jpg" alt="Frosty Wendys">
+                <p>Frosty <br> Wendys</p>
+            </a>
+        </div>
+        <div class="box onehundredeighty-three beverage" id="smoothie_pay_de_limón">
+            <a href="recipe/smoothie_pay_de_limón.html">
+                <img class="img_icon" src="../img/n183.jpg" alt="Smoothie Pay de Limón">
+                <p>Smoothie Pay de Limón</p>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function saveScrollPosition() {
+            const scrollPosition = window.scrollY;
+            window.location.href = window.location.href.split('?')[0] + '?scrollPosition=' + scrollPosition;
+        }
+
+        window.onload = function () {
+            // Check if the URL has a scroll position parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('scrollPosition')) {
+                const scrollPosition = parseInt(urlParams.get('scrollPosition'), 10);
+                window.scrollTo(0, scrollPosition);
+            }
+
+            // Optionally save the scroll position at regular intervals if needed
+            setTimeout(saveScrollPosition, 35000); // Remove this line if the interval is unnecessary
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 24px;
+    font-family: "Times New Roman", Times, Baskerville, Georgia;
+}
+
+.logo{
+    width: 110px;
+    height: 100%;
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    background-color: #e6e6e6;
+}
+
+header{
+    text-align: center;
+}
+
+.headerTwo{
+    font-size: 0.5rem;
+}
+
+h1{
+    margin: 0px;
+    text-align: center;
+}
+
+.typOne{
+    margin-top: 15px;
+    width: 180px;
+    height: 100%;
+}
+
+h2{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.arrow{
+    position: fixed;
+    margin: 0px;
+}
+
+.recipeTitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 375px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    padding-top: 35px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.box a{
+    width: 100%;
+    height: 100%;
+}
+
+/*button{
+    all: unset;
+    width: 100%;
+    height: 25px;
+    background-image: url('img/corazon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin-bottom: 10px;
+}*/
+
+.box-type-two{
+    width: 95%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.link{
+    text-align: center;
+}
+
+ul, ol{
+    width: 50%;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.img_icon{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 210px;
+    border-top: 2rem;
+    border-radius: 5px;
+}
+
+.title-img{
+    border-radius: 5px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.back-arrow{
+    width: 2rem;
+    margin: 30px 10px 10px 10px;
+}
+
+.textBoxes{
+    display: flex;
+    justify-content: center;
+}
+
+.box p{
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 8px 0 0 0;
+    font-weight: 600;
+    vertical-align: sub;
+}
+
+.food-type-dividers{
+    margin: auto;
+    border-radius: 10px;
+    background-color: #d2cfc9;
+}
+
+.menu{
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 40px auto;
+    flex-basis: 320px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.meals-menu {
+    background: rgba(0, 0, 0, 0.5)url("../img/n165.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.breakfast-menu{
+    background: rgba(0, 0, 0, 0.5)url("../img/n110.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.snacks-menu{
+    background: rgba(0, 0, 0, 0.5)url("../img/n89.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.beverage-menu{
+    background: rgba(0, 0, 0, 0.5)url("../img/n44.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.other-menu{
+    background: rgba(0, 0, 0, 0.5)url("../img/n25.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.boxes-menu{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu h2{
+    font-size: 2.2rem;
+    color: #e6e6e6;
+    margin: 40% 0px 0px 0px;
+}
+
+.menu h3{
+    margin-top: 10px;
+    color: #d0ccbe;
+}
+
+.menu a{
+    width: 320px;
+    height: 320px;
+}
+
+@media (max-width: 768px) {
+    .boxes-menu {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .box{
+        width: 145px;
+        height: 250px;
+    }
+    
+    .img_icon{
+        height: 115px;
+        width: 115px;
+    }
+
+    .box p{
+        font-size: 0.8rem;
+    }
+
+    ul, ol{
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
+    .textBoxes{
+        display: block;
+    }
+
+    .recipeTitle{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 700px){
+    .boxes-menu {
+        width: 50%;
+    }
+    
+    .box p {
+        font-size: 1.35rem;
+    }
+}
