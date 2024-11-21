@@ -11,7 +11,7 @@ html{
 
 .logo{
     width: 110px;
-    height: 100%;
+    height: 110px;
     display: inline-block;
 }
 
@@ -42,7 +42,7 @@ h1{
 .typOne{
     margin-top: 15px;
     width: 180px;
-    height: 100%;
+    height: 180px;
 }
 
 h2{
@@ -121,7 +121,7 @@ ul, ol{
 .img_icon{
     display: grid;
     justify-content: center;
-    width: 100%;
+    width: 210px;
     height: 210px;
     border-top: 2rem;
     border-radius: 5px;
@@ -171,35 +171,42 @@ ul, ol{
 }
 
 .meals-menu {
-    background: rgba(0, 0, 0, 0.5)url("../img/n165.jpg");
+    background: rgba(0, 0, 0, 0.5)url("../img/n165.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
 }
 
 .breakfast-menu{
-    background: rgba(0, 0, 0, 0.5)url("../img/n110.jpg");
+    background: rgba(0, 0, 0, 0.5)url("../img/n110.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
 }
 
 .snacks-menu{
-    background: rgba(0, 0, 0, 0.5)url("../img/n89.jpg");
+    background: rgba(0, 0, 0, 0.5)url("../img/n89.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
 }
 
 .beverage-menu{
-    background: rgba(0, 0, 0, 0.5)url("../img/n44.jpg");
+    background: rgba(0, 0, 0, 0.5)url("../img/n44.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
 }
 
 .other-menu{
-    background: rgba(0, 0, 0, 0.5)url("../img/n25.jpg");
+    background: rgba(0, 0, 0, 0.5)url("../img/n25.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.val-menu{
+    background: rgba(0, 0, 0, 0.5)url("../img/n196.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
@@ -264,7 +271,7 @@ ul, ol{
 
 @media (min-width: 700px){
     .boxes-menu {
-        width: 50%;
+        width: 80%;
     }
     
     .box p {
